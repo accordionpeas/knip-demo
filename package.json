@@ -1,0 +1,22 @@
+{
+  "name": "knip-demo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "knip": "knip"
+  },
+  "devDependencies": {
+    "knip": "^2.29.0"
+  },
+  "knip": {
+    "entry": [
+      "src/server/index.ts"
+    ],
+    "project": [
+      "src/**/*.ts"
+    ]
+  }
+}
